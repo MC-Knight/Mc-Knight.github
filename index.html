@@ -5,30 +5,188 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>My Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-	<div class="container">
-		<div class="navigation">
-			<img src="images/profile.png">
-			<p>Teto Joseph</p>
+	<!-- Home section start -->
+        <section id="HomeSection">
+            <div class="sidebar">
+                <div style="text-align:center">
+                    <img src="images/profile.png" class="profile-picture">
+                </div>
+                <h3>Joseph Teto</h3>
+                <ul>
+                <li><a href="#HomeSection">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#whatIdo">What I do</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="social-media">
+                    <a class="tooltip" href="#"><i class="fa-brands fa-instagram"></i><span class="tooltiptext">Instagram</span></a>
+                    <a class="tooltip" href="#"><i class="fa-brands fa-twitter"></i><span class="tooltiptext">Twitter</span></a>
+                    <a class="tooltip" href=""><i class="fa-brands fa-linkedin"></i><span class="tooltiptext">Linkedin</span></a>
+                    <a class="tooltip" href="https://github.com/Mc-Knight"><i class="fa-brands fa-github"></i><span class="tooltiptext">Github</span></a>
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="centering">
+                    <div class="header">Welcome</div>
+                    <div class="intro">I'm a web developer.</div>
+                    <div class="location">based in Kigali, Rwanda</div>
+                    <div class="btn"><a href="#contact">Hire Me</a></div>
+                </div>
+            </div>
+        </section>
 
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About Me</a></li>
-				<li><a href="#">What I do</a></li>
-				<li><a href="#">Contact Me</a></li>
-			</ul>
-		</div>
+        <!-- Home section end -->
 
-		<div class="welcome">
-			<h1>Welcome</h1>
-			<p>I'm a web developer.</p>
-			<span>based in Kigali, Rwanda</span>
-			<div class="btn">
-				<p>Hire Me</p>
-			</div>
-		</div>
-	</div>
+        <!-- About Me section start -->
+        <section id="about">
+            <div class="header">
+                <div class="background">ABOUT ME</div>
+                <div class="over">Know Me Better</div>
+                <div class="line"></div>
+                <!-- <p class="background">ABOUT ME</p>
+                <p class="over">Know Me Better</p> -->
+            </div>
+            <div class="middle">
+                <div class="main">
+                    <div class="title">I'm <span>Joseph Teto</span>, a Web Developer</div>
+                    <div class="content">
+                        <p>Flexible software developer and graphic designer ready to take on varied and diverse writing projects.Equally skilled at delivering technical reports and comprehensive, visceral, and substantial final projects </p>
+                        <p>Known for fulfilling duties typically assigned to several developer.Keen to take ownership of client’s creative identity and user outreach efforts, and broadening client’s bases by enhancing public appeal through visually-stimulating and interactive environments</p>
+                    </div>
+                </div>
+                <div class="credentials">
+                    <div class="text"><span>Name:</span>  Joseph Teto</div>
+                    <div class="text"><span> Email:  </span><span class="email">  tetobobo1@gmail.com</span></div>
+                    <div class="text"><span>Age:</span> 22</div>
+                    <div class="text"> <span>From:</span>  Kigali, Rwanda</div>
+                    <div class="btn"><a href="./files/Resume.pdf" download="Toussaint CV">Download CV</a></div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="div experience">
+                    <div class="nbr">2+</div>
+                    <div class="text">Years Experience</div>
+                </div>
+                <div class="div clients">
+                    <div class="nbr">4+</div>
+                    <div class="text">Happy clients</div>
+                </div>
+                <div class="div projects">
+                    <div class="nbr">7+</div>
+                    <div class="text">Projects done</div>
+                </div>
+                <div class="div awards">
+                    <div class="nbr">2+</div>
+                    <div class="text">Awards given</div>
+                </div>
+            </div> 
+        </section>
+
+        <!-- About Me section end -->
+
+
+        <!-- What I do section start -->
+
+        <section id="whatIdo">
+            <div class="header">
+                <div class="background">SERVICES</div>
+                <div class="over">What I Do?</div>
+                <div class="line"></div>
+            </div>
+
+            <div class="middle">
+                    <div class="card">
+                        <div class="icon"><i class="fa-solid fa-desktop"></i></div>
+                        <div class="text">
+                            <p class="title">Web App development</p>
+                            <p class="msg">I'm a web developer experienced in Html, CSS, NodeJs, expressJs with interraction with databases like mongodb and postgres .</p> 
+                        </div>
+                        
+                    </div>
+                    <div class="card">
+                        <div class="icon"><i class="fa-solid fa-mobile-button"></i></div>
+                        <div class="text">
+                            <p class="title">Mobile App development</p>
+                            <p class="msg">I also offer services in mobile app development especially in frontend stack with react native </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon"><i class="fa-solid fa-palette"></i></div>
+                        <div class="text">
+                            <p class="title">Graphic design</p>
+                            <p class="msg">I'm a graphic designer experienced in producing best design projects with photoshop and other resources.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                        <div class="text">
+                            <p class="title">UI/UX design</p>
+                            <p class="msg">I'm UI/UX designer experienced in working with Figma ,designing best mockups for websites ,web applications and mobile application .</p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- What I do section end -->
+
+        <!-- Contact section start -->
+
+        <section id="contact">
+            <div class="header">
+                <div class="background">CONTACT</div>
+                <div class="over">Get in Touch</div>
+                <div class="line"></div>
+            </div>
+            <div class="middle">
+                <div class="left">
+                    <div class="title">ADDRESS</div>
+                    <div class="loc">
+                        <p>Kigali,  Rwanda</p>
+                        <p>Nyamirambo</p>
+                        <p>kn 40,</p>
+                    </div>
+                    <div class="cont">
+                        <p><i class="fa-solid fa-phone-flip"></i>  (250) 789412421</p>
+                        <p class=""><i class="fa-solid fa-envelope"></i>  tetobobo1</p>
+                        <p class="email">@gmail.com</p>
+                    </div>
+                    <div class="soc">
+                        <div class="title">FOLLOW ME</div>
+                        <a class="tooltip" href="#"><i class="fa-brands fa-instagram"></i><span class="tooltiptext">Instagram</span></a>
+                        <a class="tooltip" href="#"><i class="fa-brands fa-twitter"></i><span class="tooltiptext">Twitter</span></a>
+                        <a class="tooltip" href=""><i class="fa-brands fa-linkedin"></i><span class="tooltiptext">Linkedin</span></a>
+                        <a class="tooltip" href="https://github.com/Mc-Knight"><i class="fa-brands fa-github"></i><span class="tooltiptext">Github</span></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="title">SEND US A NOTE</div>
+                    <div class="input">
+                        <form action="" method="">
+                            <input type="hidden" name="_next" value="">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="text" id="name" name="name" placeholder="Name" required>
+                            <input type="email" id="email" name="email" placeholder="Email" required><br>
+                            <textarea id="" name="Message" placeholder="Tell us more about what you need....." required></textarea><br>
+                            <input class="btn" type="submit" value="Send Message">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Copyrights &copy; 2022 <span>Teto.</span> All Rights Reserved</p>
+            </div>
+        </section>
+
+           
+        <!-- Contact section end -->
 
 </body>
 </html>
