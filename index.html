@@ -169,7 +169,7 @@
                 <div class="right">
                     <div class="title">SEND US A NOTE</div>
                     <div class="input">
-                        <form action="" method="">
+                        <form action="" method="" name="submit-to-google-sheet">
                             <input type="hidden" name="_next" value="">
                             <input type="hidden" name="_captcha" value="false">
                             <input type="text" id="name" name="name" placeholder="Name" required>
@@ -187,6 +187,20 @@
 
            
         <!-- Contact section end -->
+
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz00IMAUfMt0LyM3OJ2dOxJeNeWY9XgKG7XHvJ45to9tDTiq2FgIi5pzvvlaKNM2gCSDg/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 
 </body>
 </html>
