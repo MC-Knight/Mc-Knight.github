@@ -948,3 +948,13 @@
         margin-bottom:50px;
     }
 }
+
+
+
+#msg{
+    color: #61b752;
+    margin-top: -10px;
+    display: block;
+    text-align: left;
+    margin-right: 10px;
+}
