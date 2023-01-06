@@ -461,6 +461,95 @@
 }
 
 /* What I do section end */
+
+
+
+
+/* blog I do section start */
+
+#blog {
+    background-color: #1F1D21;
+    height:100Vh;
+    margin-left:240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+}
+
+#blog .header {
+    font-size: 40px;
+    position:relative;
+    margin:50px 0px 180px 0px;
+}
+
+#blog .header .background{
+    position:absolute;
+    font-size: 8vw;
+    text-align: center;
+    font-weight:700;
+    color:#2D2B2B;
+    width:80%;
+    margin: 0px 10%;
+}
+
+#blog .header .over {
+    position:absolute;
+    text-align:center;
+    width: 40%;
+    margin:4.5% 30%;
+    font-size:3vw;
+    font-weight: 700;
+    color: #f3f1f1;
+}
+
+#blog .header .line{
+    position:absolute;
+    width: 8vw;
+    border-bottom: 3px solid #14c58a;
+    margin:9.5% 45%;
+}
+
+#blog .blog-body{
+    width: 90%;
+    height: 60vh;
+    background-color: transparent;
+    margin: 5px auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#blog .blog-body .new-blog{
+    width: 200px;
+    height: 27vh;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#blog .blog-body .new-blog .icon{
+    font-size: 50px;
+
+}
+#blog .blog-body .new-blog p{
+    padding: 10px;
+}
+
+#blog .blog-body .new-blog:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+
+/* blog I do section end */
 /* Contact section starts */
 
 #contact {
@@ -644,6 +733,14 @@
 }
 
 /* Contact section end */
+
+#msg{
+    color: #61b752;
+    margin-top: -10px;
+    display: block;
+    text-align: left;
+    margin-right: 10px;
+} 
 
 
 @media only screen and (max-device-width:867px){
@@ -877,7 +974,8 @@
     #contact .middle .right .input input {
         width: 100%;
     }
-}   
+}  
+
 
 @media only screen and (max-device-width:480px){
     /* about section */
@@ -951,10 +1049,3 @@
 
 
 
-#msg{
-    color: #61b752;
-    margin-top: -10px;
-    display: block;
-    text-align: left;
-    margin-right: 10px;
-}
